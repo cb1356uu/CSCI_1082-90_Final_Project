@@ -100,6 +100,7 @@ public class GameBoard extends JFrame implements ActionListener, WindowListener{
 
 	public static void main(String args[]){
 		new GameBoard();
+		System.out.println("Ready up to start the game!");
 	}
 
 	public GameBoard(){
@@ -120,7 +121,7 @@ public class GameBoard extends JFrame implements ActionListener, WindowListener{
 		//
 		//
 		//NORTH PANEL
-		pNorth.setLayout(new GridBagLayout());
+		pNorth.setLayout(new BorderLayout(0, 0));
 		Border border = BorderFactory.createTitledBorder("Console");
 		pNorth.setBorder(border);
 		outputAreaNorth = new JTextArea(3, 30);
@@ -472,6 +473,7 @@ public class GameBoard extends JFrame implements ActionListener, WindowListener{
 			} catch (BadLocationException ex) {
 				ex.printStackTrace();
 			}
+			outputAreaNorth.setText("Ready up to start the game!");
 			//
 			//P1 READY BUTTON
 		}else if(buttonString.equals("P1 Ready")) {

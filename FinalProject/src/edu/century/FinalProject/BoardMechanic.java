@@ -348,7 +348,7 @@ public class BoardMechanic extends PlayerMechanics{
 		setScore();
 		this.currentGameWon = true;
 		System.out.print("Player " + playerTurn + " wins!\n" );
-		System.out.println("Reset the board and ready up to play again." );
+		System.out.println("Reset the board to play again." );
 	}
 
 
